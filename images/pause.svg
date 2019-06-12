@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="41px" viewBox="0 0 35 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>pause</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="strength-A1" transform="translate(-163.000000, -506.000000)" fill="#A997DF" fill-rule="nonzero">
+            <g id="pause" transform="translate(163.000000, 506.000000)">
+                <path d="M11.1363717,0 L3.1817697,0 C1.42448992,0 0,1.41213431 0,3.15377838 L0,37.8462216 C0,39.5880419 1.42448992,41 3.1817697,41 L11.1363717,41 C12.8936515,41 14.3181414,39.5880419 14.3181414,37.8462216 L14.3181414,3.15377838 C14.3179636,1.41213431 12.8934737,0 11.1363717,0 Z M31.8182303,0 L23.8636283,0 C22.1061707,0 20.6816808,1.41213431 20.6816808,3.15377838 L20.6816808,37.8462216 C20.6816808,39.5880419 22.1061707,41 23.8636283,41 L31.8182303,41 C33.5755101,41 35,39.5880419 35,37.8462216 L35,3.15377838 C35.0001778,1.41213431 33.5755101,0 31.8182303,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -82,10 +82,6 @@ button {
     color: black;
 }
 
-/* .btn:hover {
-    background-color: white;
-} */
-
 footer {
     background-color: #D9D4E8;
     color: #A997DF;
@@ -98,7 +94,7 @@ footer {
     padding-top: 70px;
 }
 
-/*Bounce*/
+/*BOUNCE*/
 @keyframes bounce {
     0% {-webkit-transform: scale(1.1,.9);
         transform: scale(1.1,.9);}
@@ -109,14 +105,13 @@ footer {
 
 h2.bounce {
   display: inline-block;
-  /*name-duration-function(ease,eas-in,linear)-delay-count-direction */
   animation: bounce 0.7s ease 2s infinite alternate;
 }
 /* 
 h2.bounce:hover {
   animation: none;
 } */
-/*END BOUNCER*/
+/*END BOUNCE*/
 
 /* COUNTDOWN */
 /*  
@@ -176,12 +171,9 @@ h2.bounce:hover {
   .wrapper {
     width: 95px;
     height: 95px;
-    /* margin: 40px auto; */
     position: absolute;
     top: 350px;
-    /* border-radius: 50%; */
     background: #ED5C34;
-    /* border: 7px solid #F2FF49; */
     
   }
   
@@ -268,12 +260,7 @@ h2.bounce:hover {
   /* ZOOM */
   <style>
 .zoom {
-  /* padding: 50px;
-  background-color: green; */
-  transition: transform .2s; /* Animation */
-  /* width: 200px;
-  height: 200px;
-  margin: 0 auto; */
+  transition: transform .2s;
 }
 
 .zoom:hover {

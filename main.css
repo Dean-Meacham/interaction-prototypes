@@ -1,7 +1,13 @@
 body {
     background-color: #ED5C34;
     font-family: 'Oswald', sans-serif;
+}
 
+.device-wrapper {
+    max-width: 320px;
+}
+.relative {
+    position: relative;
 }
 img {
     max-width: 100%;
@@ -37,18 +43,19 @@ h2 {
 }
 .control-wrapper {
     position: absolute;
-    bottom: 115px;
+    bottom: 50px;
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
 }
 .control-wrapper--step-one {
-    position: static; 
+    position: static;
+    padding-top: 40px;
 }
 
 .btn {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 a {
@@ -62,13 +69,23 @@ button {
     color: #A997DF;
     background-color: #00FFC5;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     width: 90px;
     height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* .btn:hover {
+    background-color: white;
+} */
+
 footer {
     background-color: #D9D4E8;
     color: #A997DF;
@@ -78,5 +95,188 @@ footer {
 .options {
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 70px;
 }
+
+/*Bounce*/
+@keyframes bounce {
+    0% {-webkit-transform: scale(1.1,.9);
+        transform: scale(1.1,.9);}
+   50% { -webkit-transform: scale(.9,1.1) translateY(-.5rem)}
+   70% { -webkit-transform: scale(1);
+         transform: scale(1);}
+}
+
+h2.bounce {
+  display: inline-block;
+  /*name-duration-function(ease,eas-in,linear)-delay-count-direction */
+  animation: bounce 0.7s ease 2s infinite alternate;
+}
+/* 
+h2.bounce:hover {
+  animation: none;
+} */
+/*END BOUNCER*/
+
+/* COUNTDOWN */
+/*  
+  #countdown {
+    position: relative;
+    margin: auto; */
+    /* margin-top: 100px; */
+    /* height: 40px;
+    width: 40px;
+    text-align: center;
+  }
+
+  #countdown-number {
+    color: #A997DF;
+    display: inline-block;
+    line-height: 40px;
+
+  }
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+  }
+  
+  svg circle {
+    stroke-dasharray: 113px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 3px;
+    stroke: #A997DF;
+    fill: none;
+    animation: countdown 10s linear infinite forwards;
+  }
+  
+  @keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 113px;
+    }
+  } */
+
+  /* PIE-TIMER */
+  * {
+    box-sizing: border-box;
+  }
+
+  .timer {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .wrapper {
+    width: 95px;
+    height: 95px;
+    /* margin: 40px auto; */
+    position: absolute;
+    top: 350px;
+    /* border-radius: 50%; */
+    background: #ED5C34;
+    /* border: 7px solid #F2FF49; */
+    
+  }
+  
+  .pie {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: #00FFC5;
+    border: 7px solid #F2FF49;
+  }
+  
+  .spinner {
+    border-radius: 100% 0 0 100%/50% 0 0 50%;
+    z-index: 200;
+    border-right: none;
+    animation: rota 10s linear infinite;
+  }
+  
+  .wrapper:hover .spinner,
+  .wrapper:hover .filler,
+  .wrapper:hover .mask {
+    animation-play-state: paused;
+  }
+  
+  .spinner:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+    content: "";
+    display: none;
+  }
+  
+  .filler {
+    border-radius: 0 100% 100% 0/0 50% 50% 0;
+    left: 50%;
+    opacity: 0;
+    z-index: 100;
+    animation: fill 10s steps(1, end) infinite;
+    border-left: none;
+  }
+  
+  .mask {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: 1;
+    z-index: 300;
+    animation: mask 10s steps(1, end) infinite;
+  }
+  
+  @keyframes rota {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes mask {
+    0% {
+      opacity: 1;
+    }
+    50%, 100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fill {
+    0% {
+      opacity: 0;
+    }
+    50%, 100% {
+      opacity: 1;
+    }
+  }
+
+  /* ZOOM */
+  <style>
+.zoom {
+  /* padding: 50px;
+  background-color: green; */
+  transition: transform .2s; /* Animation */
+  /* width: 200px;
+  height: 200px;
+  margin: 0 auto; */
+}
+
+.zoom:hover {
+  transform: scale(1.2); 
+}
+  
